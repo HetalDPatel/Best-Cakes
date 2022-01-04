@@ -1,0 +1,292 @@
+    /* StAuth10244: I Hetal Patel, 000821900 certify that this material is my original work. 
+    No other person's work has been used without due acknowledgement. 
+    I have not made my work available to anyone else."*/
+            *{          
+                box-sizing: border-box;
+                
+            }
+            body{
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding: 0;
+                margin: 0;
+                background-color:rgb(252, 250, 251);
+                background-image: url("images/8.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+        
+            .top{
+                height:6%;
+                background-color: rgb(241, 4, 151);
+            }
+            .partition{
+                height:2%;
+                background-color: rgb(241, 4, 151);
+            }
+            /* Header*/
+            header{
+                margin-left: 4%;
+                margin-right: 4%;    
+            }
+            .header_img{
+                margin-right: 20px;
+                width:150px;
+                height: 100px;    
+            }
+            .header-item{
+                display: flex;
+
+            }
+            nav{
+                margin-top: 1%;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+        
+            }
+            nav a{
+                position: relative;
+                color:rgb(241, 4, 151);
+                text-align: center;
+                padding: 10px 15px 40px 10px ;
+                text-decoration: none;
+                font-size: 20px;
+                margin-top: 17px;
+                height:25px;
+                font-weight: 700;
+
+            }
+            nav a:hover{
+                position: relative;
+                color:rgb(252, 250, 251);
+                background-color: rgb(241, 4, 151);
+                text-align: center;
+                padding: 10px 15px 40px 10px ;
+                text-decoration: none;
+                font-size: 20px;
+                margin-top: 17px;
+                height:25px;
+                
+            }
+            .sign_in{
+                width:150px;
+                margin-left: 25%;
+                margin-top: 2.7%;
+                color:rgb(241, 4, 151);
+                text-align: center;
+                text-decoration: underline;
+                font-size: 20px;
+                height:25px;
+                font-weight: 600;
+            }
+            
+            .main{            
+                margin-left: 5%;
+                margin-right: 5%;              
+            }
+
+            .grid-container{
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: auto auto auto auto;               
+                
+            }
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid  rgb(241, 4, 151);
+                padding: 20px;            
+                text-align: center;
+                display: block;
+                        
+            }
+            .grid_img{           
+            width:200px;
+            height:250px;
+            margin: auto;
+            }
+            .grid_img img{
+                width: 100%;
+                height: 100%;
+            }
+            .grid-item h4{
+                color: rgb(241, 4, 151);
+            }
+            
+            /* Footer*/
+            footer{
+                margin-top: 15px;
+                background-color: rgb(241, 4, 151);
+            }
+            .footer_grid_container{
+                display: grid;
+            }
+            .footer_grid_item{
+                grid-template-columns: repeat(4,1fr);
+                grid-row: 500px;
+            }
+            .f{
+                height:80px;
+                background-image: url("images/12.jpg");
+                background-repeat: repeat;
+                background-size:contain;
+            }
+            .footer_icon{            
+                background-color:rgb(255, 254, 254);                       
+            }
+            .icons{
+                width: 80%;
+                margin: auto;
+            }
+            .icons ul{
+                width:60%;
+                height: 100%;
+                margin: auto;
+            }
+            .icons ul li{            
+                display: inline;
+                padding: 2.6%;
+                        
+            }
+            .icons ul li img{         
+                width:10%;
+                height:100%;
+
+            }
+            .footer_add_time{
+                width:50%;
+                height:400px;
+                float: right;
+                display: flex;
+            }
+            .footer_add_img{
+                margin: auto;
+                width:500px;
+                height: 100%;
+            }
+            .footer_add_img img{
+                height: 100%;
+                width: 100%;
+            }
+            .footer_address{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin: auto;
+                width:500px;
+                height: 100%;
+                color:rgb(255, 254, 254);
+                text-align: center;
+            }
+            .footer_address .timing{
+                font-size: 12pt;
+                font-family: cursive;
+            }
+
+            .copyright{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                color:rgb(255, 254, 254);
+                text-align: center;
+            }
+            
+
+            @media screen and (max-width: 720px){
+                
+                nav,.header-item{
+                    flex-direction: column;
+                }
+                body{
+                    background-image: none;
+                }
+                .header-item{
+                    margin: 0;
+                    text-align: center;
+                }
+                .sign_in{
+                    margin-left: 20px;
+                }
+                
+                nav a{
+                    border:1px solid  rgb(241, 4, 151) ;
+                    font-weight: 800;
+                    margin: 0;
+                    font-family:cursive;
+                    text-decoration: none;
+                    font-size: 20px;
+                    height:25px;
+                
+                }
+                .sign_in{
+                    margin-left:32%;
+                    margin-bottom: 2%; 
+                }
+                nav a:hover{
+                    border:1px solid rgb(255, 254, 254) ;
+                    font-weight: 800;
+                    margin: 0;
+                    font-family:cursive;
+                    text-decoration: none;
+                    font-size: 20px;   
+                    height:25px;
+                }
+                .partition{
+                    display: none;
+                }
+                .grid-container{
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .grid-item {
+                padding: 10px; 
+                }
+                .grid-item h4{
+
+                    font-style: oblique;
+                    font-stretch: narrower;
+                }
+                .grid-item p{
+                    font-size: 10pt; 
+    
+                }
+                .grid_img{           
+                    width:120px;
+                    height:180px;
+                    margin: auto;
+                }
+                .header_img{
+                    margin:0;
+                    height:100%;
+                    width:100%;     
+                }
+                .grid-container{
+                    grid-gap: 0;
+                }
+                .icons,.icons ul,footer_add_time{
+                    width: 100%;
+                }
+                .f{
+                    display: none;
+                }
+
+                .footer_add_time,.footer_address .timing,.copyright{
+                    font-size: 9pt;
+                }
+                .footer_add_time{
+                    height: 300px;
+                }
+                .footer_add_img{
+                    height: 300px;
+                }
+                .icons ul{
+                    margin-top: 2px;
+                    width:80%;
+                    height: 80%;                          
+                }
+                .icons ul li{            
+                    padding: 4%;                         
+                }
+                .icons ul li img{         
+                    width:6%;
+                    height:100%;
+        
+                }
+                
+            }
+            
